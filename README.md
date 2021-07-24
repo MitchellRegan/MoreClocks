@@ -1,2 +1,4 @@
 # MoreClocks
 A practice React Native app that started as a way for me learn how to update components in real-time, and then got out of hand with weird types of clocks.
+
+<img src="https://mreganart.files.wordpress.com/2021/06/screenshot_20210620-002751.png" width=200>  <img src="https://mreganart.files.wordpress.com/2021/06/screenshot_20210620-002743.png" width=200>  <img src="https://mreganart.files.wordpress.com/2021/06/screenshot_20210620-011153.png" width=200>  <img src="https://mreganart.files.wordpress.com/2021/06/screenshot_20210620-002545.png" width=200>  <img src="https://mreganart.files.wordpress.com/2021/06/screenshot_20210620-011531.png" width=200>  <img src="https://mreganart.files.wordpress.com/2021/06/screenshot_20210619-235716.png" width=200>  <img src="https://mreganart.files.wordpress.com/2021/06/screenshot_20210624-071717.png" width=200>
