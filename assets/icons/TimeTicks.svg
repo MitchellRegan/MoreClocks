@@ -1,0 +1,46 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ff0000;stroke-width: 3 } 
+		.txt1 { font-size: 12px;fill: #ff0000;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+	</style>
+	<path id="Layer 3" class="shp0" d="M122 74C128 74.11 131.2 75.76 134.96 77.17M113 8C124.02 8.28 147.06 19.11 143.79 17.7M115 25C125.67 25.58 134.73 29.7 142 33M117.2 41.61C127.32 42.99 132.26 46.05 139.08 48.99M118.73 54.08C123.22 54.37 135.82 58.64 137.67 59.7M120 64C122.96 64.04 131.63 66.19 136 69" />
+	<path id="Layer 3 copy" class="shp0" d="M135.09 182.17C129.09 182.06 125.89 180.41 122.13 179M144.09 248.17C133.07 247.89 110.03 237.06 113.31 238.47M142.09 231.17C131.42 230.59 122.36 226.48 115.09 223.17M139.89 214.56C129.78 213.18 124.83 210.12 118.01 207.18M138.36 202.09C133.87 201.8 121.27 197.53 119.42 196.48M137.09 192.17C134.13 192.13 125.47 189.98 121.09 187.17" />
+	<text id="6 " style="transform: matrix(1,0,0,1,104,3)" >
+		<tspan x="0" y="12" class="txt1">6</tspan>
+	</text>
+	<text id="5 " style="transform: matrix(1,0,0,1,144,28)" >
+		<tspan x="0" y="12" class="txt1">5</tspan>
+	</text>
+	<text id="4 " style="transform: matrix(1,0,0,1,107,35)" >
+		<tspan x="0" y="12" class="txt1">4</tspan>
+	</text>
+	<text id="3 " style="transform: matrix(1,0,0,1,139,55)" >
+		<tspan x="0" y="12" class="txt1">3</tspan>
+	</text>
+	<text id="2 " style="transform: matrix(1,0,0,1,111,59)" >
+		<tspan x="0" y="12" class="txt1">2</tspan>
+	</text>
+	<text id="1 " style="transform: matrix(1,0,0,1,136,72)" >
+		<tspan x="0" y="12" class="txt1">1</tspan>
+	</text>
+	<text id="7 " style="transform: matrix(1,0,0,1,137,175)" >
+		<tspan x="0" y="12" class="txt1">7</tspan>
+	</text>
+	<text id="8 " style="transform: matrix(1,0,0,1,112,182)" >
+		<tspan x="0" y="12" class="txt1">8</tspan>
+	</text>
+	<text id="9 " style="transform: matrix(1,0,0,1,140,197)" >
+		<tspan x="0" y="12" class="txt1">9</tspan>
+	</text>
+	<text id="10 " style="transform: matrix(1,0,0,1,101,203)" >
+		<tspan x="0" y="12" class="txt1">10</tspan>
+	</text>
+	<text id="11 " style="transform: matrix(1,0,0,1,143,226)" >
+		<tspan x="0" y="12" class="txt1">11</tspan>
+	</text>
+	<text id="12 " style="transform: matrix(1,0,0,1,96,233)" >
+		<tspan x="0" y="12" class="txt1">12</tspan>
+	</text>
+</svg>
