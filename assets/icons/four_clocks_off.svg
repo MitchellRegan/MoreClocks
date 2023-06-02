@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+	<title>New Project</title>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<path id="Four Clocks Off" fill-rule="evenodd" class="s0" d="m50.9 5.8h-37.8q-3 0-5.1 2.2-2.2 2.1-2.2 5.1v37.8q0 3 2.2 5.1 2.1 2.2 5.1 2.2h37.8q3 0 5.1-2.2 2.2-2.1 2.2-5.1v-37.8q0-3-2.2-5.1-2.1-2.2-5.1-2.2zm13.1 7.3v37.8q0 5.4-3.8 9.3-3.9 3.8-9.3 3.8h-37.8q-5.4 0-9.3-3.8-3.8-3.9-3.8-9.3v-37.8q0-5.4 3.8-9.3 3.9-3.8 9.3-3.8h37.8q5.4 0 9.3 3.8 3.8 3.9 3.8 9.3zm-50-2.1h36v7.9h-36zm0 11.4h36v7.9h-36zm0 11.4h36v7.9h-36zm0 11.4h36v7.9h-36z"/>
+</svg>

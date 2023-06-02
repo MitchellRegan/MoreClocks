@@ -107,6 +107,7 @@ const FaceClock = props => {
                     fill={'#000'}
                     stroke={'#fff'}
                     strokeWidth={2}
+                    key={"facecircle1"}
                 />
 
                 {minuteMarks}
@@ -120,6 +121,7 @@ const FaceClock = props => {
                     cy={screenWidth / 2}
                     r={10}
                     fill={'#fff'}
+                    key={"facecircle2"}
                 />
             </Svg>
         );
@@ -157,6 +159,7 @@ const FaceClock = props => {
                     y1={hourStart.y}
                     y2={hourEnd.y}
                     style={{ position: 'absolute' }}
+                    key={"minutehand"}
                 />
                 <Line
                     stroke="white"
@@ -167,6 +170,7 @@ const FaceClock = props => {
                     y1={minStart.y}
                     y2={minEnd.y}
                     style={{ position: 'absolute' }}
+                    key={"hourhand"}
                 />
                 <Line
                     stroke="red"
@@ -177,6 +181,7 @@ const FaceClock = props => {
                     y1={secStart.y}
                     y2={secEnd.y}
                     style={{ position: 'absolute' }}
+                    key={"secondhand"}
                 />
             </Svg>
         );

@@ -121,25 +121,25 @@ const WeekdayClock = props => {
         <View style={styles.wrapper}>
             {DrawBackground()}
 
-            <View style={{ position: 'absolute', height: (screenWidth - 30), transform: [{ rotate: '' + ((0 * 51.43) + 25.714) + 'deg' }] }}>
+            <View style={{ fontFamily: 'serif', position: 'absolute', height: (screenWidth - 30), transform: [{ rotate: '' + ((0 * 51.43) + 25.714) + 'deg' }] }}>
                 <Text>Sunday</Text>
             </View>
-            <View style={{ position: 'absolute', height: (screenWidth - 30), transform: [{ rotate: '' + ((1 * 51.43) + 25.714) + 'deg' }] }}>
+            <View style={{ fontFamily: 'serif', position: 'absolute', height: (screenWidth - 30), transform: [{ rotate: '' + ((1 * 51.43) + 25.714) + 'deg' }] }}>
                 <Text>Monday</Text>
             </View>
-            <View style={{ position: 'absolute', height: (screenWidth - 30), justifyContent: 'flex-end', transform: [{ rotate: '' + ((2 * 51.43) + 25.714 -180) + 'deg' }] }}>
+            <View style={{ fontFamily: 'serif', position: 'absolute', height: (screenWidth - 30), justifyContent: 'flex-end', transform: [{ rotate: '' + ((2 * 51.43) + 25.714 -180) + 'deg' }] }}>
                 <Text>Tuesday</Text>
             </View>
-            <View style={{ position: 'absolute', height: (screenWidth - 30), justifyContent:'flex-end', transform: [{ rotate: '' + ((3 * 51.43) + 25.714 - 180) + 'deg' }] }}>
+            <View style={{ fontFamily: 'serif', position: 'absolute', height: (screenWidth - 30), justifyContent:'flex-end', transform: [{ rotate: '' + ((3 * 51.43) + 25.714 - 180) + 'deg' }] }}>
                 <Text>Wednesday</Text>
             </View>
-            <View style={{ position: 'absolute', height: (screenWidth - 30), justifyContent:'flex-end', transform: [{ rotate: '' + ((4 * 51.43) + 25.714 - 180) + 'deg' }] }}>
+            <View style={{ fontFamily: 'serif', position: 'absolute', height: (screenWidth - 30), justifyContent:'flex-end', transform: [{ rotate: '' + ((4 * 51.43) + 25.714 - 180) + 'deg' }] }}>
                 <Text>Thursday</Text>
             </View>
-            <View style={{ position: 'absolute', height: (screenWidth - 30), transform: [{ rotate: '' + ((5 * 51.43) + 25.714) + 'deg' }] }}>
+            <View style={{ fontFamily: 'serif', position: 'absolute', height: (screenWidth - 30), transform: [{ rotate: '' + ((5 * 51.43) + 25.714) + 'deg' }] }}>
                 <Text>Friday</Text>
             </View>
-            <View style={{ position: 'absolute', height: (screenWidth - 30), transform: [{ rotate: '' + ((6 * 51.43) + 25.714) + 'deg' }] }}>
+            <View style={{ fontFamily: 'serif', position: 'absolute', height: (screenWidth - 30), transform: [{ rotate: '' + ((6 * 51.43) + 25.714) + 'deg' }] }}>
                 <Text>Saturday</Text>
             </View>
         </View>

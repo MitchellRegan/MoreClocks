@@ -66,7 +66,6 @@ export default class BinaryClock extends Component {
     render() {
         return (
             <View style={styles.wrapper}>
-                <Text style={styles.title}>Binary</Text>
                 <View style={styles.bitView}>
                     <View style={styles.bitTextView}>
                         <Text style={styles.bitText}>1 --</Text>
@@ -104,13 +103,6 @@ const styles = StyleSheet.create({
         margin: 5,
         padding: 10,
         alignItems: 'center',
-    },
-
-    title: {
-        fontFamily: 'serif',
-        fontWeight: 'bold',
-        fontSize: 20,
-        color: '#fff',
     },
 
     bitView: {
@@ -151,7 +143,10 @@ const styles = StyleSheet.create({
         fontSize: 16,
         textAlign: 'center',
         marginRight: 5,
-        textAlignVertical: 'center'
+        textAlignVertical: 'center',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: 3, height: 3 },
+        textShadowRadius: 10
     },
 
     bitText: {
@@ -162,6 +157,9 @@ const styles = StyleSheet.create({
         fontFamily: 'serif',
         fontSize: 10,
         textAlign: 'center',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: 3, height: 3 },
+        textShadowRadius: 10
     },
 
     verticalBar: {

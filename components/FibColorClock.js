@@ -50,7 +50,7 @@ export default class FibColorClock extends Component {
                 switch (colorCode) {
                     case 1: return '#f00'; //Hours only are red
                     case 2: return '#00f'; //Minutes only are blue
-                    case 3: return '#0f0'; //Both hours and minutes are green
+                    case 3: return '#0c0'; //Both hours and minutes are green
                     default: return '#fff'; //Neither hours or minutes is white
                 }
             }
@@ -125,11 +125,11 @@ export default class FibColorClock extends Component {
                 <View style={[{ backgroundColor: this.FindLineColor(3) }, styles.longMinLine]} />
 
                 {(!this.state.showText) && <TouchableOpacity style={styles.button} onPress={() => this.ToggleText()}>
-                    <Text style={styles.buttonText}>Show Instructions</Text>
+                    <Text style={styles.buttonText}>[Show Instructions]</Text>
                 </TouchableOpacity>}
 
                 {(this.state.showText) && <TouchableOpacity style={styles.button} onPress={() => this.ToggleText()}>
-                    <Text style={styles.buttonText}>Hide Instructions</Text>
+                    <Text style={styles.buttonText}>[Hide Instructions]</Text>
                 </TouchableOpacity>}
 
                 {(this.state.showText) && <View>
@@ -152,16 +152,25 @@ const styles = StyleSheet.create({
         borderColor: '#000',
         borderWidth: 1,
         height: 8,
+        shadowColor: 'rgba(0, 0, 0, 0.75)',
+        shadowOffset: { width: 3, height: 3 },
+        shadowRadius: 10
     },
 
     tallMinLine: {
         borderColor: '#000',
         borderWidth: 1,
         width: 8,
+        shadowColor: 'rgba(0, 0, 0, 0.75)',
+        shadowOffset: { width: 3, height: 3 },
+        shadowRadius: 10
     },
 
     clockBox: {
         flexDirection: 'row',
+        shadowColor: 'rgba(0, 0, 0, 0.75)',
+        shadowOffset: { width: 3, height: 3 },
+        shadowRadius: 10
     },
 
     box: {
@@ -171,6 +180,7 @@ const styles = StyleSheet.create({
     },
 
     boxValueText: {
+        fontFamily: 'serif',
         color: '#888',
         fontWeight: 'bold',
         fontSize: 20,
@@ -178,34 +188,44 @@ const styles = StyleSheet.create({
     },
 
     helpText: {
+        fontFamily: 'serif',
         color: '#fff',
-        fontSize: 16,
+        fontSize: 14,
         alignSelf: 'center',
         fontWeight: 'bold',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: 3, height: 3 },
+        textShadowRadius: 10
     },
 
     helpTextSmall: {
+        fontFamily: 'serif',
         color: '#fff',
-        fontSize: 12,
+        fontSize: 10,
         alignSelf: 'center',
         fontWeight: 'bold',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: 3, height: 3 },
+        textShadowRadius: 10
     },
 
     button: {
-        backgroundColor: '#ccc',
-        borderRadius: 5,
-        borderWidth: 1,
-        borderColor: '#000',
+        backgroundColor: 'rgb(166,166,166, 0.6)',
         alignSelf: 'center',
         margin: 20,
     },
 
     buttonText: {
+        fontFamily: 'serif',
+        color: '#fff',
         paddingLeft: 20,
         paddingRight: 20,
         paddingTop: 5,
         paddingBottom: 5,
         fontWeight: 'bold',
-        fontSize: 20
+        fontSize: 18,
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: 3, height: 3 },
+        textShadowRadius: 10
     }
 })

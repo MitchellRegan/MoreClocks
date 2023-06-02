@@ -28,11 +28,10 @@ const MilitaryClock = props => {
 const styles = StyleSheet.create({
     wrapper: {
         width: '75%',
-        borderRadius: 8,
-        borderWidth: 2,
+        borderWidth: 1,
         borderColor: '#bbb',
         margin: 5,
-        padding: 10,
+        padding: 3,
         alignItems: 'center',
         backgroundColor: '#92010C'
     },
@@ -42,13 +41,19 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 16,
         color: '#fff',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: 3, height: 3 },
+        textShadowRadius: 10
     },
 
     time: {
-        fontFamily: 'monospace',
+        fontFamily: 'serif',
         fontWeight: 'bold',
         fontSize: 36,
         color: '#fff',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: 3, height: 3 },
+        textShadowRadius: 10
     },
 
     highlight: {
@@ -58,10 +63,6 @@ const styles = StyleSheet.create({
         left: '0%',
         right: '0%',
         backgroundColor: '#B7131F',
-        borderBottomColor: '#DD2E3B',
-        borderBottomWidth: 6,
-        borderTopEndRadius: 8,
-        borderTopStartRadius: 8,
     }
 })
 

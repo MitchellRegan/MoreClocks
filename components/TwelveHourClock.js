@@ -60,11 +60,10 @@ const TwelveHourClock = props => {
 const styles = StyleSheet.create({
     wrapper: {
         width: '75%',
-        borderRadius: 8,
-        borderWidth: 2,
+        borderWidth: 1,
         borderColor: '#bbb',
         margin: 5,
-        padding: 10,
+        padding: 3,
         alignItems: 'center',
         backgroundColor: '#0C7A01'
     },
@@ -74,13 +73,19 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 16,
         color: '#fff',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: 3, height: 3 },
+        textShadowRadius: 10
     },
 
     time: {
-        fontFamily: 'monospace',
+        fontFamily: 'serif',
         fontWeight: 'bold',
         fontSize: 32,
         color: '#fff',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: 3, height: 3 },
+        textShadowRadius: 10
     },
 
     highlight: {
@@ -90,10 +95,6 @@ const styles = StyleSheet.create({
         left: '0%',
         right: '0%',
         backgroundColor: '#35BA27',
-        borderBottomColor: '#53C947',
-        borderBottomWidth: 6,
-        borderTopEndRadius: 8,
-        borderTopStartRadius: 8,
     }
 })
 
