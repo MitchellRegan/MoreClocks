@@ -40,5 +40,6 @@ const styles = StyleSheet.create({
 
     timeTickmarks: {
         position: 'absolute',
+        color: '#000'
     }
 })

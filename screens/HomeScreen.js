@@ -85,7 +85,7 @@ export default class HomeScreen extends Component {
             <View style={styles.wrapper}>
                 <ImageBackground
                     style={styles.bgImage}
-                    source={require("../assets/images/moreClocks_bg_green.png")}
+                    source={require("../assets/images/moreClocks_bg_blue.png")}
                     resizeMode='cover'
                 >
                     <Text style={styles.whyText}>Too  Many</Text>
@@ -132,37 +132,37 @@ export default class HomeScreen extends Component {
 
                     {/* Buttons for toggling which clock is displayed */}
                     <View style={styles.displayButtonRow}>
-                        {(this.state.clockShown == 0) && <FourClocksOn style={styles.displayButton} width={55} height={55} />}
+                        {(this.state.clockShown == 0) && <FourClocksOff style={styles.displayButton} width={55} height={55} />}
                         {(this.state.clockShown != 0) && <TouchableOpacity onPress={() => this.ShowClock(0)}>
                             <FourClocksOff style={styles.displayButton} width={40} height={40} />
                         </TouchableOpacity>}
 
-                        {(this.state.clockShown == 1) && <FaceOn style={styles.displayButton} width={55} height={55} />}
+                        {(this.state.clockShown == 1) && <FaceOff style={styles.displayButton} width={55} height={55} />}
                         {(this.state.clockShown != 1) && <TouchableOpacity onPress={() => this.ShowClock(1)}>
                             <FaceOff style={styles.displayButton} width={40} height={40} />
                         </TouchableOpacity>}
 
-                        {(this.state.clockShown == 2) && <WeekOn style={styles.displayButton} width={55} height={55} />}
-                        {(this.state.clockShown != 2) && <TouchableOpacity onPress={() => this.ShowClock(2)}>
-                            <WeekOff style={styles.displayButton} width={40} height={40} />
-                        </TouchableOpacity>}
-
-                        {(this.state.clockShown == 3) && <SegmentedOn style={styles.displayButton} width={55} height={55} />}
+                        {(this.state.clockShown == 3) && <SegmentedOff style={styles.displayButton} width={55} height={55} />}
                         {(this.state.clockShown != 3) && <TouchableOpacity onPress={() => this.ShowClock(3)}>
                             <SegmentedOff style={styles.displayButton} width={40} height={40} />
                         </TouchableOpacity>}
 
-                        {(this.state.clockShown == 4) && <BinaryOn style={styles.displayButton} width={55} height={55} />}
+                        {(this.state.clockShown == 2) && <WeekOff style={styles.displayButton} width={55} height={55} />}
+                        {(this.state.clockShown != 2) && <TouchableOpacity onPress={() => this.ShowClock(2)}>
+                            <WeekOff style={styles.displayButton} width={40} height={40} />
+                        </TouchableOpacity>}
+
+                        {(this.state.clockShown == 4) && <BinaryOff style={styles.displayButton} width={55} height={55} />}
                         {(this.state.clockShown != 4) && <TouchableOpacity onPress={() => this.ShowClock(4)}>
                             <BinaryOff style={styles.displayButton} width={40} height={40} />
                         </TouchableOpacity>}
 
-                        {(this.state.clockShown == 5) && <FibSpiralOn style={styles.displayButton} width={55} height={55} />}
+                        {(this.state.clockShown == 5) && <FibSpiralOff style={styles.displayButton} width={55} height={55} />}
                         {(this.state.clockShown != 5) && <TouchableOpacity onPress={() => this.ShowClock(5)}>
                             <FibSpiralOff style={styles.displayButton} width={40} height={40} />
                         </TouchableOpacity>}
 
-                        {(this.state.clockShown == 6) && <FibColorOn style={styles.displayButton} width={55} height={55} />}
+                        {(this.state.clockShown == 6) && <FibColorOff style={styles.displayButton} width={55} height={55} />}
                         {(this.state.clockShown != 6) && <TouchableOpacity onPress={() => this.ShowClock(6)}>
                             <FibColorOff style={styles.displayButton} width={40} height={40} />
                         </TouchableOpacity>}
@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         marginTop: -5,
         marginBottom: 20,
-        marginLeft: 22,
+        marginLeft: 15,
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: { width: 3, height: 3 },
         textShadowRadius: 10

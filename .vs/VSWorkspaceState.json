@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\assets\\icons",
+    "\\assets\\images",
     "\\components",
     "\\screens"
   ],
-  "SelectedNode": "\\components\\SegmentedFaceClock.js",
+  "SelectedNode": "\\components\\FibColorClock.js",
   "PreviewInSolutionExplorer": false
 }
