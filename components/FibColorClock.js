@@ -60,8 +60,8 @@ export default class FibColorClock extends Component {
 
     /**
      * Returns a string for the background color image for what color a box should be.
-     * @param {number} value_ The number value of the box that will be colored
-     * @returns {string} The hex code string for the box's color
+     * @param {number} value_ The number value of the box that will be colored.
+     * @returns {string} The image path string for the box's color.
      */
     FindBGImage = function (value_) {
         var hours = this.props.hour;
@@ -112,37 +112,10 @@ export default class FibColorClock extends Component {
         var min = this.props.min % 5;
 
         if (value_ <= min) {
-            return '#ffff45';
+            return '#d1c000';
         }
 
         return '#000';
-    }
-
-
-    /**
-     * Returns an image path string for what color one of the edge lines should be.
-     * @param {number} value_ The number value of the edge line that will be colored.
-     * @param {boolean} horizontal_ True if this is for a horizontal line, False if this is for a vertical line.
-     * @returns {string} The image path string for the box's color.
-     */
-    FindLineImage = function (value_, horizontal_) {
-        var min = this.props.min % 5;
-
-        if (value_ <= min) {
-            if (horizontal_) {
-                return require("../assets/images/yellow_light_horizontal.png");
-            }
-            else {
-                return require("../assets/images/yellow_light_vertical.png");
-            }
-        }
-
-        if (horizontal_) {
-            return require("../assets/images/off_light_horizontal.png");
-        }
-        else {
-            return require("../assets/images/off_light_vertical.png");
-        }
     }
 
 
@@ -161,12 +134,10 @@ export default class FibColorClock extends Component {
     render() {
         return (
             <View style={styles.wrapper}>
-                {/*<View style={[{ backgroundColor: this.FindLineColor(1) }, styles.longMinLine]} />*/}
-                <ImageBackground style={styles.longMinLine} source={this.FindLineImage(1, true)} />
+                <View style={[{ backgroundColor: this.FindLineColor(1) }, styles.longMinLine]} />
 
                 <View style={styles.clockBox}>
-                    {/*<View style={[{ backgroundColor: this.FindLineColor(4) }, styles.tallMinLine]} />*/}
-                    <ImageBackground style={styles.tallMinLine} source={this.FindLineImage(4, false)} />
+                    <View style={[{ backgroundColor: this.FindLineColor(4) }, styles.tallMinLine]} />
 
                     <View>
                         <View style={{ flexDirection: 'row' }}>
@@ -190,7 +161,7 @@ export default class FibColorClock extends Component {
                                 </ImageBackground>
                                 <ImageBackground
                                     style={[{ width: (unitLength), height: (unitLength) }, styles.box]}
-                                    source={this.FindBGImage(1)}
+                                    source={this.FindBGImage(0)}
                                     resizeMode='cover'
                                 >
                                     {(this.state.showText) && <Text style={styles.boxValueText}>1</Text>}
@@ -217,12 +188,10 @@ export default class FibColorClock extends Component {
                         {(this.state.showText) && <Text style={styles.boxValueText}>5</Text>}
                     </ImageBackground>
 
-                    {/*<View style={[{ backgroundColor: this.FindLineColor(2) }, styles.tallMinLine]} />*/}
-                    <ImageBackground style={styles.tallMinLine} source={this.FindLineImage(2, false)}/>
+                    <View style={[{ backgroundColor: this.FindLineColor(2) }, styles.tallMinLine]} />
                 </View>
 
-                {/*<View style={[{ backgroundColor: this.FindLineColor(3) }, styles.longMinLine]} />*/}
-                <ImageBackground style={styles.longMinLine} source={this.FindLineImage(3, true)} />
+                <View style={[{ backgroundColor: this.FindLineColor(3) }, styles.longMinLine]} />
 
 
                 {/* ====== Instruction Text ====== */}
@@ -252,7 +221,7 @@ const styles = StyleSheet.create({
 
     longMinLine: {
         borderColor: '#000',
-        //borderWidth: 1,
+        borderWidth: 1,
         height: 8,
         shadowColor: 'rgba(0, 0, 0, 0.75)',
         shadowOffset: { width: 3, height: 3 },
@@ -261,7 +230,7 @@ const styles = StyleSheet.create({
 
     tallMinLine: {
         borderColor: '#000',
-        //borderWidth: 1,
+        borderWidth: 1,
         width: 8,
         shadowColor: 'rgba(0, 0, 0, 0.75)',
         shadowOffset: { width: 3, height: 3 },

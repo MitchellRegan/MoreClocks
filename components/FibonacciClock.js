@@ -3,7 +3,7 @@ import { StyleSheet, View, Animated } from 'react-native';
 
 //SVG icons
 import FibonacciSpiral from '../assets/icons/FibonacciSpiral.svg';
-import TimeTicks from '../assets/icons/TimeTicks.svg';
+import TimeTicks from '../assets/icons/TimeTicksBlack.svg';
 
 export default class FibonacciClock extends Component {
     constructor(props) {
